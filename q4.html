@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coding</title>
+    <script>
+        function validate()
+        {
+            var name = document.forms["demoForm"]["firstname"].value;
+            var checkbox = document.forms["demoForm"]["checkme"].value;
+            if(name == "")
+            {
+                alert("Name required");
+                return false;
+            }
+            else if(checkbox.checked!=true)
+            {
+                alert("Checkbox should be selected");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name = "demoForm" onsubmit="return validate()">
+        <input type="text" name="firstname">
+        <input type="check" name="checkme">
+        <input type="submit" name="submit">
+
+    </form>
+</body>
+</html>

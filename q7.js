@@ -1,0 +1,13 @@
+$.ajax({
+        url:"www.example.com/api/get/1",
+        method:'GET',
+        data:{},
+        success:function(response)
+        {
+            console.log(response);
+        },
+        error:function(error)
+        {
+            console.log(error);
+        }
+});
