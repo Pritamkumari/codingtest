@@ -1,0 +1,41 @@
+.inner {
+  width: 830px;
+  height: auto;
+  margin-top: 30px;
+  padding-left: 40px;
+  margin-bottom: 10px;
+}
+ 
+.border {
+  border-bottom: solid;
+}
+
+.leftpane {
+  width: 85%;
+  height: 100%;
+  float: left;
+  padding-left: 10px;
+  padding-top: 10px;
+  border-collapse: collapse;
+  background-color: #bfbfbf;
+}
+
+.rightpane {
+width: 15%;
+height: 100%;
+position: relative;
+float: right;
+border-collapse: collapse;
+}
+.innerDeleteSection {
+width: 100%;
+height: 100%;
+position: absolute;
+background-color: rgb(240, 240, 210);
+}
+.deleteIconStyle {
+  position: relative;
+  left: 50%;
+  top: 15px;
+  transform: translate(-50%, 0%);
+}
