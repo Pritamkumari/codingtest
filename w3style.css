@@ -1,0 +1,33 @@
+body {
+    font-family: Arial, Helvetica;
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+
+#container {
+    border: 0px solid red;
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+} 
+
+#header {
+    background-color: brown;
+    height: 100px;
+}
+
+#menu {
+    width: 100px;
+    background-color: white;
+}
+
+#content1 {
+    width: 100px;
+    background-color: white;
+} 
+
+#content2 {
+    width: 100px;
+    background-color: white;
+}
