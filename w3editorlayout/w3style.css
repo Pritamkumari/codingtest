@@ -1,0 +1,125 @@
+.addspacecontainer {
+    height: 100px;
+    width: 100%;
+    padding-top: 5px;
+} 
+
+.adscontainer {
+    width: 60%;
+    height: 90px;
+    margin: 0 auto 0 auto;
+    background-color: whitesmoke;
+} 
+
+.addImage {
+    height: 90px;
+    padding: 1px;
+    background-color: whitesmoke;
+} 
+
+.addImage img {
+    height: 90px;
+    width: 100%;   
+} 
+ 
+.addAction {
+    height: 90px;
+    float: right;
+    clear: none;
+    background-color: whitesmoke;
+}  
+
+.crossbutton {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-right: 0px !important;
+    margin-left: auto;
+    background-color: whitesmoke;
+    
+} 
+
+.infobutton {
+    height: 20px;
+    width: 20px;
+    float: right;
+    background-color: whitesmoke;
+} 
+
+.icons-center {
+    text-align: center;
+    width: 100%;
+}
+
+.visitlink {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.operationcontainer {
+        height: 40px;
+        width: 100%;
+        background-color: whitesmoke;
+} 
+
+.operationcontainer p {
+        float: right;
+        color: black;
+
+       
+} 
+
+.operationcontainer button {
+    height: 100%;
+    width: 70px;
+    margin: 0px;
+    border-width: 0px;
+    float: left;
+} 
+ 
+.btn {
+    background-color: #4CAF50;
+    color: white; 
+  } 
+
+.btn:hover {
+    background-color: white;
+    color: gray;
+  } 
+
+  .buttonhover:hover {
+    background-color: darkgray;
+  }  
+
+  .icons { 
+    color: gray; 
+} 
+
+.contentview {
+    height: 1000px;
+}
+
+.codeview {
+    height: 100%;
+    
+    
+} 
+
+.resultview {
+    height: 100%;
+    
+    
+} 
+
+.center {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
+/*hover position and icon ye sb krna h proper way ma background change krna h button pr alert */

@@ -1,0 +1,108 @@
+.header {
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    padding: 5px 5px;
+  }
+  
+  .header a {
+    float: left;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px; 
+    line-height: 25px;
+  }
+  
+  .header .logo {
+    font-size: 40px;
+    font-weight: bold;
+  } 
+
+.logo:hover {
+    color: green;
+  }
+  
+  .header-right {
+    float: right;
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 18px; 
+  }
+  
+  nav{
+    overflow: hidden;
+    background-color: #555;
+  } 
+
+  nav a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    text-align: center;
+  }
+    nav a:hover {
+    background-color: #000;
+    text-decoration: none;
+    color: white;
+  } 
+  .sticky {
+    width: 100%;
+    top: 0;
+    position: fixed;
+  }
+
+  .sideviewscrool{
+    width: 230px;
+    height: 900px;
+    background: #f1f1f1;
+    padding: 0px 0px;
+    position: absolute;
+  }
+  
+  .sideviewscrool ul { 
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    text-align: left;
+    overflow: hidden;
+    overflow-y: scroll;
+  }  
+  
+  .search-result {
+    list-style-type: none;
+    font-size: 17px;
+    margin-bottom: 5px;
+    padding-left: 30px;
+  } 
+  
+  .sideviewscrool a:hover{
+    background-color: green;
+    text-decoration: none;
+    color: white;
+  } 
+
+  .sideviewscrool li:hover{
+    background-color: green;
+  } 
+
+  .sideviewscrool a {
+    color: #000;
+  } 
+
+.interaction-title {
+    padding-left: 27px;
+}
+
+.containerview {
+    height: 900px;
+    background-color: aqua;
+} 
+
+.sideadsview {
+    height: 900px;
+    background-color: blue;
+}

@@ -1,0 +1,200 @@
+
+.logo {
+    width: 100%;
+    overflow: hidden;
+    background-color: blue;
+    
+} 
+
+.logo h1 {
+    margin-top: 20px;
+    position: fixed;
+} 
+
+.logo p {
+    float: right;
+    margin-top: 40px;
+    padding-right: 30px;
+} 
+
+.operationcontainer {
+    width: 100%; 
+    overflow: hidden;
+    background-color: #555;
+}   
+
+.operationcontainer a {
+    padding: 12px;
+    color: white;
+    text-decoration: none;
+    font-size: 21px;
+    width: auto;
+    text-align: center;
+  }
+  
+  .operationcontainer a:hover {
+    background-color: #000;
+  }
+ 
+  .operationcontainer button {
+    width: 70px;
+    border-width: 0px;
+} 
+
+.icon-bar a {
+    float: none;
+    text-align: center;
+    padding: 12px;
+    color: white;
+  }
+  
+  .icon-bar a:hover {
+    background-color: #000;
+  }
+
+
+.containerview 
+{
+    height: 900px;
+    
+}
+
+.scroolview {
+    background-color: lightblue;
+
+} 
+
+.scroolview h6 {
+    width: 500px;
+}
+
+ul.sideviewscrool {
+    background-color: lightblue;
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+  } 
+
+.search-result {
+    list-style-type: none;
+    font-size: 17px;
+    padding: 5px;
+  } 
+
+  .scroolview ul li:hover {
+    background-color: lightgreen;
+  }
+
+.centeradsview {
+    height: 110px; 
+    width: 70%;
+    margin: 0 auto 0 auto;
+    background-color: gold;
+} 
+
+.addImage {
+    background-color: #000;
+    height: 110px; 
+    padding: 1px;
+    
+} 
+
+.addImage img {
+    height: 110px;
+    width: 100%;  
+} 
+
+.addAction {
+    background-color: blueviolet;
+    height: 110px; 
+} 
+
+.crossbutton {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-right: 0px !important;
+    margin-left: auto;
+    background-color: whitesmoke;
+    
+} 
+
+.infobutton {
+    height: 20px;
+    width: 20px;
+    float: right;
+    background-color: whitesmoke;
+} 
+
+.icons-center {
+    text-align: center;
+    width: 100%;
+}
+
+.visitlink {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.contentview {
+    background-color: aqua;
+} 
+
+.first-div {
+    height: 100px;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    
+} 
+
+.homebutton {
+    float: left;
+    margin-top: 41px;
+    padding-left: 15px;
+}
+
+.nextbutton {
+    float: right;
+    margin-top: 41px;
+} 
+
+.second-div {
+    margin-top: 20px;
+    background-color: skyblue;
+} 
+
+.btn {
+    background-color: green;
+} 
+
+.third-div {
+    margin-top: 40px;
+    background-color: azure;
+} 
+
+.adspaceview {
+    background-color: red;
+} 
+
+
+.center {
+    padding-left: 15px;
+} 
+
+
+/* 
+1. see video 
+2. build old layout(w3homelayout)
+3. build new layout 
+4.box-sizing pdhna h use navigation class to build navbar 
+* Video link dekh k Old layout theek krna hai
+* Box sizing phna hai
+* Primary header fixed hai wo theek kana hai
+* Nav tag  use krke layout mean Change HTML, CSS, (Secondry header with nav tag)
+* New layout banana hai 
+*/

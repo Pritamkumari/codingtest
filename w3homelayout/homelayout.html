@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>w3SchoolHomePage</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="./schoolhome.css"> 
+   <script src="./add.js"></script> 
+   <script>
+window.onscroll = function() 
+{
+    stikNavigationBar()
+};
+
+var navbar = document.getElementById("pritam");
+var sticky = navbar.offsetTop;
+
+function stikNavigationBar() {
+    console.log(sticky, window.pageYOffset,navbar);
+    console.log("================");
+  if (window.pageYOffset >= sticky) {
+    console.log("sticky class added");
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  } 
+  stikSideMenu();
+} 
+    
+var sidemenu = document.getElementsByClassName("sideviewscrool");
+var sidemenusticky = sidemenu.offsetTop;
+function stikSideMenu() {
+    if (window.pageYOffset >= sidemenusticky) {
+      sidemenu.classList.add("sticky")
+    } else {
+      sidemenu.classList.remove("sticky");
+    }
+  }
+   </script>
+</head>
+<body> 
+    <div class="wrapper">
+    <div class="header">
+        <a class="logo" href="https://www.google.com/" target="_blank">w3schools<span class="dotcom" style="color: green; font-size: 35px;">.com</span></a>
+        <div class="header-right">
+          <p>THE WORLD'S LARGEST WEB DEVELOPER SITE</p>
+        </div>
+      </div> 
+      <div id="pritam">
+        <nav>
+            <a class="icon-bar" href="#"><i class="fa fa-home"></i></a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">HTML</a>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">CSS</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">JAVASCRIPT</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">SQL</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">PYTHON</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">PHP</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">BOOTSTRAP</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">HOW TO</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">MORE</a> 
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">REFERENCES</a>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank">CERTIFICATES</a>
+            <a class="icon-bar" href="#"><i class="fa fa-adjust icons" aria-hidden="true"></i></a>
+            <a class="icon-bar" href="#"><i class="fa fa-globe"></i></a> 
+            <a class="icon-bar" href="#"><i class="fa fa-search"></i></a> 
+            </nav> 
+          </div>
+      <div class="sideviewscrool"> 
+        <ul > 
+            <div class="interaction-title">CSS Tutorial</div>
+          <li class="search-result"><a href="#">CSS Home</li></a>
+            <li class="search-result"><a href="#">CSS Introduction</li></a>
+            <li class="search-result"><a href="#">CSS Syntax</li></a> 
+            <li class="search-result"><a href="#">CSS Selector</li></a>
+            <li class="search-result"><a href="#">CSS How To</li></a>
+            <li class="search-result"><a href="#">CSS Comments</li></a>
+            <li class="search-result"><a href="#">CSS Colors</li></a> 
+            <li class="search-result"><a href="#">CSS Backgrounds</li></a> 
+            <li class="search-result"><a href="#">CSS Borders</li></a> 
+            <li class="search-result"><a href="#">CSS Margins</li></a>
+            <li class="search-result"><a href="#">CSS Padding</li></a> 
+            <li class="search-result"><a href="#">CSS Home</li></a>
+            <li class="search-result"><a href="#">CSS Introduction</li></a>
+            <li class="search-result"><a href="#">CSS Syntax</li></a> 
+            <li class="search-result"><a href="#">CSS Selector</li></a>
+            <li class="search-result"><a href="#">CSS How To</li></a>
+            <li class="search-result"><a href="#">CSS Comments</li></a>
+            <li class="search-result"><a href="#">CSS Colors</li></a> 
+            <li class="search-result"><a href="#">CSS Backgrounds</li></a> 
+            <li class="search-result"><a href="#">CSS Borders</li></a> 
+            <li class="search-result"><a href="#">CSS Margins</li></a>
+            <li class="search-result"><a href="#">CSS Padding</li></a>
+        </ul>
+    </div> 
+    <div class="container-fluid"> 
+        <div class="row containerview"> 
+            <div class="col-lg-10">
+
+            </div>
+            <div class="col-lg-2 sideadsview">
+
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+</html>
