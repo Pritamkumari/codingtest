@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+.logo-header {
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+} 
+
+.addAction {
+    height: 50px;
+    width: 100%;
+    background-color: blue;
+} 
+
+.text {
+    height: 150px;
+    width: 100%;
+    background-color: #ff6600;
+} 
+
+.textPara {
+    height: 200px;
+    width: 100%;
+    background-color: #4dffff;
+} 
+
+.leftimgText {
+    height: 200px;
+    background-color: gainsboro;
+} 
+
+.lefttextcontainer {
+    height: 150px;
+    background-color: blue;      
+} 
+
+.rightimagcontainer {
+    height: 150px;
+    background-color: green;      
+} 
+
+.rightimgText {
+    height: 200px;
+    background-color: #00cccc;
+} 
+
+.righttextcontainer {
+    height: 150px;
+    background-color: red;      
+} 
+
+.leftimagcontainer {
+    height: 150px;
+    background-color: green;      
+} 
+
+.contentview {
+    height: 200px;
+    background-color: black;
+} 
+
+.productdetails {
+    height: 180px;
+    background-color: #006666;
+} 
+
+.productcommunity {
+    height: 180px;
+    background-color: #ff3385;
+} 
+
+.producttechnology {
+    height: 180px;
+    background-color: #77ff33;
+} 
+
+.projectsno {
+    height: 66px;
+    background-color: #77ff33;
+}
+
+.projectsdelivered {
+    height: 66px;
+    background-color: black;
+} 
+
+.projectdetailview {
+    height: 114px;
+    background-color: #751aff;
+} 
+

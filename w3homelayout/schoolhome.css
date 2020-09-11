@@ -28,13 +28,14 @@
     float: right;
     color: black;
     padding: 10px;
-    text-decoration: none;
+   text-decoration: none;
     font-size: 18px; 
   }
   
   nav{
     overflow: hidden;
     background-color: #555;
+    
   } 
 
   nav a {
@@ -43,12 +44,13 @@
     text-decoration: none;
     font-size: 21px;
     text-align: center;
-  }
+  } 
     nav a:hover {
     background-color: #000;
     text-decoration: none;
     color: white;
   } 
+
   .sticky {
     width: 100%;
     top: 0;
@@ -78,8 +80,7 @@
     margin-bottom: 5px;
     padding-left: 30px;
   } 
-  
-  .sideviewscrool a:hover{
+  .sideviewscrool a:hover{ 
     background-color: green;
     text-decoration: none;
     color: white;
@@ -93,7 +94,7 @@
     color: #000;
   } 
 
-.interaction-title {
+.interaction-title { 
     padding-left: 27px;
 }
 
@@ -105,4 +106,4 @@
 .sideadsview {
     height: 900px;
     background-color: blue;
-}
+} 

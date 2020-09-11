@@ -1,0 +1,125 @@
+body,html {
+    height: 100%;
+    margin: 0;
+} 
+
+.box { 
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+} 
+
+.box .adspaceview {
+    width: 60%;
+    margin: auto;
+    flex: 0 0 auto;
+    padding-bottom: 5px;
+} 
+
+.box .operationview { 
+    flex: 0 0 44px; 
+    background-color: whitesmoke;
+} 
+
+.box .contentview {
+    flex: 1 1 auto;
+    flex-flow: row; 
+    width: 100%;
+    display: flex;
+    background-color: whitesmoke;
+} 
+.contentview .codeview {
+    flex: 1 1 auto;
+} 
+
+.contentview .resultview {
+    flex: 1 1 auto;
+} 
+
+/* adspaceview css */
+.addImage {
+    height: 90px;
+    padding: 1px;
+    background-color: whitesmoke;
+} 
+
+.addImage img {
+    height: 90px;
+    width: 100%;   
+} 
+ 
+.addAction {
+    height: 90px;
+    float: right;
+    clear: none;
+    background-color: whitesmoke;
+}  
+
+.crossbutton {
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-right: 0px !important;
+    margin-left: auto;
+    background-color: whitesmoke;
+    
+} 
+
+.infobutton {
+    height: 20px;
+    width: 20px;
+    float: right;
+    background-color: whitesmoke;
+} 
+
+.icons-center {
+    text-align: center;
+    width: 100%;
+}
+
+.visitlink { 
+    vertical-align: middle;
+    background-color: aqua;
+}
+
+/* operationview css */
+
+.operationview p {
+    float: right;
+    color: black;
+    padding-right: 13px; 
+} 
+.operationview button {
+height: 100%;
+width: 70px;
+margin: 0px;
+border-width: 0px;
+float: left;
+} 
+
+.btn {
+background-color: #4CAF50;
+color: white; 
+} 
+
+.btn:hover {
+background-color: white;
+color: gray;
+} 
+
+.buttonhover:hover {
+background-color: darkgray;
+}  
+
+.icons { 
+color: gray; 
+}
+
+/* contentview css */
+
+.center {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
