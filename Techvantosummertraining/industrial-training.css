@@ -6,90 +6,130 @@
 
 .logo-header {
     height: 100px;
-    width: 100%;
-    background-color: aqua;
+    background-color: #f5f5f0;
+}  
+
+.logo-header img {
+    float: left;
+    width: 150px;
+    height: 100px;
+  } 
+
+.logo-header .registerbtn {
+      float: right;
+      color: blue;
+      font-size: 20px;
+      padding-left: 30px;
+      padding-right: 30px;
+      border-radius: 20px;
+      margin-top: 10px;
+      margin-right: 400px;
+      border: 2px solid  blue;  
+      
+  } 
+
+.registerbtn:hover {
+      background-color: blue;
+      color: white;
+  } 
+
+.logo-header .icons { 
+    float: right; 
+    font-size: 30px;
+    
 } 
 
-.addAction {
-    height: 50px;
-    width: 100%;
+.callaction {
+    float: right;
+    padding: 60px;
+}
+
+#addAction {
     background-color: blue;
-} 
+}   
 
 .text {
-    height: 150px;
-    width: 100%;
+    text-align: center;
+    font-size: 35px;
+    padding-top: 40px; 
+    padding-bottom: 40px;
+    color: white;
     background-color: #ff6600;
 } 
 
-.textPara {
-    height: 200px;
+.introduction {
+    text-align: center;
+    color: gray;
+   padding: 50px;
+    background-color: white;
+} 
+
+.leftimgText {  
+    background-color: #f5f5f0;
+} 
+
+.rightimagcontainer img {
+    margin: 30px;
+    height: 300px;
     width: 100%;
-    background-color: #4dffff;
 } 
 
-.leftimgText {
-    height: 200px;
-    background-color: gainsboro;
-} 
-
-.lefttextcontainer {
-    height: 150px;
-    background-color: blue;      
-} 
-
-.rightimagcontainer {
-    height: 150px;
-    background-color: green;      
-} 
+.lefttextcontainer h1 {
+    margin: 30px;
+}
 
 .rightimgText {
-    height: 200px;
-    background-color: #00cccc;
+    
+    background-color: white;
+    
 } 
 
-.righttextcontainer {
-    height: 150px;
-    background-color: red;      
+.leftimagcontainer img {
+    margin: 30px;
+    height: 300px;
+    width: 100%;
 } 
 
-.leftimagcontainer {
-    height: 150px;
-    background-color: green;      
+.righttextcontainer h1 {
+    margin: 30px;
 } 
 
-.contentview {
-    height: 200px;
+.righttextcontainer p {
+    margin: 30px;
+}
+
+.contentview { 
+    margin-top: 20px;
     background-color: black;
 } 
 
 .productdetails {
-    height: 180px;
-    background-color: #006666;
-} 
-
-.productcommunity {
-    height: 180px;
-    background-color: #ff3385;
-} 
-
-.producttechnology {
-    height: 180px;
-    background-color: #77ff33;
-} 
-
-.projectsno {
-    height: 66px;
-    background-color: #77ff33;
-}
-
-.projectsdelivered {
-    height: 66px;
     background-color: black;
 } 
 
-.projectdetailview {
-    height: 114px;
-    background-color: #751aff;
+.productcommunity {
+    background-color: black;
+} 
+
+.producttechnology {
+    background-color: black;
+} 
+
+.projectsno { 
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    background-color: black;
+}
+
+.projectsdelivered {
+    color: white;
+    font-size: 20px;
+    background-color: black;
+} 
+
+.projectdescription {
+    color: white;
+    background-color: black;
 } 
 
