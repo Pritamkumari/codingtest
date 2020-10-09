@@ -3,67 +3,140 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>W3editorLayout</title>
+    <title>NewTechvantoWebsite</title> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-   <link rel="stylesheet" type="text/css" href="./test.css">
-   <script type="text/javascript" src="w3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="./test.css">
 </head>
 <body>
-   <div class="box">
-    <div class="adspaceview">
-      <div class="row">
-        <div class="addImage col-lg-10">
-            <img src="../Images/images10.jpg">
-        </div>
-        <div class="addAction col-lg-2">
-             <div style="height: 100%; width: 100%; background-color: aqua; display: flex; justify-content: center; align-items: center; position: absolute; margin: 0px;">
-              <a href="https://www.google.com/" class="visitlink" target="_blank">
-                <span style="color: black;">
-                Visit<i class="fa fa-angle-double-right fa-lg" aria-hidden="true"></i></span></a>
-             </div> 
-             <div class="infobutton" onclick="closebutton()"><i class="fa fa-times-circle-o icons-center" aria-hidden="true"></i></div> 
-             <div class="crossbutton" onclick="infobutton()"><i class="fa fa-question-circle-o icons-center" aria-hidden="true"></i></div> 
-             </div>        
-    </div>
-    </div>
-    <div class="operationview">
-      <button title="www.google.com Home" class="buttonhover" onclick="document.location='https://www.google.com/'"><i class="fa fa-home fa-2x icons" aria-hidden="true"></i></button>
-      <button title="Open Menu"           class="buttonhover" onclick="mymenu()"><i class="fa fa-bars fa-2x  icons" aria-hidden="true"></i></button>
-      <button  title="Save"                class="buttonhover"    onclick="save()"><i class="fa fa-floppy-o fa-2x icons" aria-hidden="true"></i></button>
-      <button title="Change Orientation"  class="buttonhover" onclick="rotation()"><i class="fa fa-repeat fa-2x icons" aria-hidden="true"></i></button>
-      <button title="Change Theme"        class="buttonhover" onclick="changeTheme()"><i class="fa fa-adjust fa-2x icons" aria-hidden="true"></i></button>
-      <button class="btn" onclick="run()">Run<i class="fa fa-angle-double-right" aria-hidden="true"></i></button>
-      <p>Result Size: 744 x 581</p>
-    </div>  
-
-    <div class="contentview">
-      <div class="codeview"> 
-        <div style="background-color:white; height: 100%; border: 5px solid whitesmoke;">
-        <p class="center">
-            Finding HTML Elements by Id
-            Hello World!
-            This example demonstrates the getElementsById method.
-            The text from the intro paragraph is Hello World!
-        </p>
-    </div>
-    </div> 
-
-    <div class="resultview"> 
-        <div style="background-color: white; height: 100%; border: 5px solid whitesmoke">
-        <p class="center">
-            Finding HTML Elements by Id
-            Hello World!
-            This example demonstrates the getElementsById method.
-            The text from the intro paragraph is Hello World!
-        </p>
-    </div>
-    </div>
+  <div class="contentbox" style="background-image: url('../Images/Vector16.png'); background-repeat: no-repeat;
+   color: skyblue; background-attachment: fixed;
+  background-size: cover;">
+      <div class="mainheader">
+          <div class="imgview">
+            <img src="../Images/relogo.png">
+          </div> 
+          <div class="naview"> 
+            <div class="togglebutton"> 
+                <p style = "margin: 10px;">UPCOMING EVENT</p>
+                <i class="fa fa-bars" style = "margin: 10px;" aria-hidden="true"></i>
+            </div> 
+            <div class="dropdownlink">
+              <ul>
+                <li>
+                  <a class="active" href="#home">Home</a> 
+                  <ul>
+                        <li><a href="#home">firstsubHome</a></li>
+                        <li><a href="#news">firstNews</a></li>
+                        <li><a href="#contact">firstContact</a></li>
+                        <li><a href="#about">firstAbout</a></li>
+                  </ul>
+                </li>
+              <li>
+                  <a href="#news">News</a> 
+                  <ul>
+                        <li><a href="#home">SecondHome</a></li>
+                        <li><a href="#news">SecondNews</a></li>
+                        <li><a href="#contact">SecondContact</a></li>
+                        <li><a href="#about">SecondAbout</a></li>
+                  </ul>
+                </li> 
+              <li>
+                  <a href="#contact">Contact</a> 
+                   <ul>
+                        <li><a href="#home">ThirdHome</a></li>
+                        <li><a href="#news">ThirdNews</a></li>
+                        <li><a href="#contact">ThirdContact</a></li>
+                        <li><a href="#about">ThirdAbout</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#about">About</a> 
+                  <ul>
+                        <li><a href="#home">ForthHome</a></li>
+                        <li><a href="#news">ForthNews</a></li>
+                        <li><a href="#contact">ForthContact</a></li>
+                        <li><a href="#about">ForthAbout</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div> 
+            <div class="spaceview"></div>
+            <div class="profileview"> 
+              <img src="D:\pritam\Pictures\Theatre brp\pics\2\100CANON\IMG_0098.jpg" alt="Avatar"> 
+              <div class="profilebackground"></div>
+            </div>
+          </div>  
       </div> 
 
-   </div>
+          <div class="secondcontentbox">
+        <div class="container">
+          <h2 style="color: aliceblue; text-align: center; text-decoration: underline;">Training Programme</h2> 
+              <div class="row">
+                <div class="description col-lg-3 col-md-6 col-sm-12"> 
+                  <div class="cardview">
+                    
+                      <i class="fa fa-address-card" aria-hidden="true"></i>
+      
+                          <p>1:1 Training </br> </br>
+                            Techvanto Community is a group of students who are trained by our experts 
+                            and now associated with us for their learnings.
+                          </p>
+                    
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </div>
+                </div> 
+                <div class="description col-lg-3 col-md-6 col-sm-12">
+                  <div class="cardview">
+                    <div class="summary">
+                      <i class="fa fa-address-card" aria-hidden="true"></i>
+                    </div> 
+                    <div class="summary">2</div> 
+                    <div class="summary">3</div> 
+                  </div>
+                </div> 
+                <div class="description col-lg-3 col-md-6 col-sm-12">
+                  <div class="cardview">
+                    <div class="summary">1</div> 
+                    <div class="summary">2</div> 
+                    <div class="summary">3</div> 
+                  </div>
+                </div> 
+                <div class="description col-lg-3 col-md-6 col-sm-12">
+                  <div class="cardview">
+                    <div class="summary">1</div> 
+                    <div class="summary">2</div> 
+                    <div class="summary">3</div> 
+                  </div>
+                </div>
+              </div> 
+            </div> 
+        </div> 
+        <!--
+        <div class="lastcontent"> 
+          <div style=" background-color: black; width:250px; border: 2px solid blue; box-shadow: 7px 5px 7px red;">
+            <p style="float: left;">Contact US:</p> 
+            <i class="fa fa-facebook iconview" aria-hidden="true"></i>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i class="fa fa-youtube-play" aria-hidden="true"></i>
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </div> 
+
+          <div class="iconshow"> 
+            <div>
+              <i class="fa fa-phone-square" aria-hidden="true"></i>
+            </div>
+            
+            <div>
+              <i class="fa fa-commenting" aria-hidden="true"></i>
+            </div>
+           
+          </div>
+      </div> -->
+    
+ </div>  
 </body>
 </html>
