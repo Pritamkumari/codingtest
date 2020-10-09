@@ -1,125 +1,270 @@
 body,html {
     height: 100%;
     margin: 0;
-} 
+}  
 
-.box { 
+.contentbox { 
     height: 100%;
     display: flex;
     flex-flow: column;
+    margin-top: 0px;
+    margin-bottom: 0px;
 } 
 
-.box .adspaceview {
-    width: 60%;
-    margin: auto;
+.secondcontentbox {
+    flex: 1 0 auto;
+    width: 100%;    
+}  
+
+.lastcontent {
     flex: 0 0 auto;
-    padding-bottom: 5px;
-} 
-
-.box .operationview { 
-    flex: 0 0 44px; 
-    background-color: whitesmoke;
-} 
-
-.box .contentview {
-    flex: 1 1 auto;
-    flex-flow: row; 
+    color: #f1f1f1;
     width: 100%;
+} 
+
+
+.mainheader { 
     display: flex;
-    background-color: whitesmoke;
-} 
-.contentview .codeview {
-    flex: 1 1 auto;
-} 
-
-.contentview .resultview {
-    flex: 1 1 auto;
+    width: 100%; 
+    flex-flow: row;
+    flex: 0 0 auto;
 } 
 
-/* adspaceview css */
-.addImage {
-    height: 90px;
-    padding: 1px;
-    background-color: whitesmoke;
-} 
-
-.addImage img {
-    height: 90px;
-    width: 100%;   
-} 
- 
-.addAction {
-    height: 90px;
-    float: right;
-    clear: none;
-    background-color: whitesmoke;
-}  
-
-.crossbutton {
-    height: 20px;
-    width: 20px;
-    float: right;
-    margin-right: 0px !important;
-    margin-left: auto;
-    background-color: whitesmoke;
+.imgview { 
+    flex: 0 0 100px;
     
+  } 
+
+
+img {
+    height: 52px;
+    width: 250px;
 } 
 
-.infobutton {
-    height: 20px;
-    width: 20px;
-    float: right;
-    background-color: whitesmoke;
+.naview { 
+    display: flex;
+    flex-flow: row;
+    flex: 1 0 auto; 
+   
+}
+
+.dropdownlink { 
+    flex: 0 0 auto;
+    display: block;    
 } 
 
-.icons-center {
-    text-align: center;
+.dropdownlink > ul{
+    background: black;
+  } 
+
+.dropdownlink ul
+  {
+    list-style:none;
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0;
+  } 
+
+.dropdownlink ul a
+  {
+    display:block;
+    color:#fff;
+    text-decoration:none;
+    font-weight:700;
+    font-size:15px;
+    line-height:52px;
+    padding-right: 15px; 
+    padding-left: 10px;
+    overflow: hidden;
+    font-family:Helvetica,Arial,sans-serif;
+  } 
+
+.dropdownlink ul li
+  {
+    position:relative;
+    float:left;
+    margin:0;
+    padding:0
+  }
+
+.dropdownlink ul li.active
+  {
+    background:#27ae60
+  }
+
+.dropdownlink ul li:hover
+  {
+
+    background: #2ecc71;
+  }
+
+.dropdownlink ul ul
+  {
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#27ae60;
+    padding:0;
+    z-index: 1;
+  }
+
+ .dropdownlink ul ul li
+  {
+    float:none;
+    width:200px;
+    border-left: 3px solid #27ae60;
+  } 
+
+.dropdownlink ul ul li:hover{
+    border-left: 3px solid #2c3e50;
+  }
+
+.dropdownlink ul ul a
+  {
+    line-height:120%;
+    padding:10px 15px
+  }
+
+.dropdownlink ul li:hover > ul
+  {
+    display:block
+  }
+
+
+.profileview {  
+    position: relative;
+    flex: 0 0 auto;
+    width: 250px;
+    display: block;
+} 
+
+.profileview img { 
+    width: 80px;
+    height: 80px;
+    z-index: 10; 
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 10px;
+    border-radius: 50%;
+  } 
+
+.profilebackground {
     width: 100%;
+    height: 52px;
+    top: 0;
+    position: absolute;
+    background-color: black;
 }
 
-.visitlink { 
-    vertical-align: middle;
-    background-color: aqua;
+.togglebutton { 
+    
+    
+    display: none; 
+    flex: 1 0 auto; 
+    background-color:  orange;
+} 
+
+.spaceview { 
+    height: 52px;
+    flex: 1 0 auto;
+    display: block;
+    background-color: black;
 }
 
-/* operationview css */
+.description { 
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+   
+} 
 
-.operationview p {
+.cardview { 
+    display: flex;   
+    line-height: 100px; 
+    text-align: center;
+    color: aliceblue;
+    flex-flow: column; 
+    background-image: linear-gradient(to bottom, rgba(19, 19, 20, 0.92), rgba(15, 13, 15, 0.93)), 
+    url('../Images/trainingimg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px solid black;
+    border-radius: 10px;
+    
+}
+
+.cardview p { 
+  margin: 10px;
+  color: white;
+  line-height: 20px; 
+  flex: 1 1 auto;
+ 
+
+} 
+
+.cardview i { 
+    height: 20px;
+    margin: 10px;
+    color: #ff0066;
+    flex: 0 0 auto; 
+    font-size: 20px;
+    text-align:center; 
+
+}
+
+.iconshow {
     float: right;
-    color: black;
-    padding-right: 13px; 
-} 
-.operationview button {
-height: 100%;
-width: 70px;
-margin: 0px;
-border-width: 0px;
-float: left;
+    color: #f1f1f1;
+    background-color: #ff0066;
 } 
 
-.btn {
-background-color: #4CAF50;
-color: white; 
-} 
 
-.btn:hover {
-background-color: white;
-color: gray;
-} 
 
-.buttonhover:hover {
-background-color: darkgray;
+@media only screen and (max-width: 768px) { 
+    /* For TabletView */ 
+    .description { 
+        padding: 10px;
+        background-color: green;
+    }
+
 }  
 
-.icons { 
-color: gray; 
-}
+@media only screen and (max-width: 576px) {
+        /* For MobileView */ 
+        .description { 
+            padding-left: 0px;
+            padding-right: 0px; 
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: skyblue;
+        } 
 
-/* contentview css */
+    .cardview {
+        flex-flow: row;
+    } 
+    .dropdownlink {
+            display: none;
+        } 
 
-.center {
-    display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 5px;
+     .profileview {
+            display: none;
+        }
+
+     .togglebutton { 
+            display: flex;
+            flex-flow: row;
+        } 
+
+        .cardview p { 
+            flex: 1 1 auto; 
+            text-align: left;
+          
+          } 
+
+      .spaceview {
+          display: none;
+      }    
 }
