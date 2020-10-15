@@ -9,57 +9,72 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./test.css">
+    <link rel="stylesheet" type="text/css" href="./homelayout.css">
 </head>
 <body>
-  <div class="contentbox" style="background-image: url('../Images/Vector16.png'); background-repeat: no-repeat;
-   color: skyblue; background-attachment: fixed;
-  background-size: cover;">
+  <div class="contentbox">
       <div class="mainheader">
           <div class="imgview">
             <img src="../Images/relogo.png">
-          </div> 
+          </div>  
+          <div class="triangle-down"></div>
           <div class="naview"> 
             <div class="togglebutton"> 
                 <p style = "margin: 10px;">UPCOMING EVENT</p>
+                <i class="fa fa-bars" style = "margin: 10px;" aria-hidden="true"></i> 
                 <i class="fa fa-bars" style = "margin: 10px;" aria-hidden="true"></i>
             </div> 
-            <div class="dropdownlink">
+          
+            <div class="dropdownlink"> 
               <ul>
                 <li>
                   <a class="active" href="#home">Home</a> 
                   <ul>
                         <li><a href="#home">firstsubHome</a></li>
-                        <li><a href="#news">firstNews</a></li>
-                        <li><a href="#contact">firstContact</a></li>
-                        <li><a href="#about">firstAbout</a></li>
+                        <li><a href="#news">firstSubNews</a> 
+                                  <ul>
+                                    <li><a href="#home">firstdeepHome</a></li>
+                                    <li><a href="#news">firstdeepNews</a> 
+                                              <ul>
+                                                <li><a href="#home">firstSubDeepHome</a></li>
+                                                <li><a href="#news">firstSubDeepNews</a></li>
+                                                <li><a href="#contact">firstSubDeepContact</a></li>
+                                                <li><a href="#about">firstSubDeepAbout</a></li>
+                                          </ul>
+                                    </li>
+                                    <li><a href="#contact">firstdeepContact</a></li>
+                                    <li><a href="#about">firstdeepAbout</a></li>
+                              </ul>
+                        </li>
+                        <li><a href="#contact">firstSubContact</a></li>
+                        <li><a href="#about">firstSubAbout</a></li>
                   </ul>
                 </li>
               <li>
                   <a href="#news">News</a> 
                   <ul>
-                        <li><a href="#home">SecondHome</a></li>
-                        <li><a href="#news">SecondNews</a></li>
-                        <li><a href="#contact">SecondContact</a></li>
-                        <li><a href="#about">SecondAbout</a></li>
+                        <li><a href="#home">SecondSubHome</a></li>
+                        <li><a href="#news">SecondSubNews</a></li>
+                        <li><a href="#contact">SecondSubContact</a></li>
+                        <li><a href="#about">SecondSubAbout</a></li>
                   </ul>
                 </li> 
               <li>
                   <a href="#contact">Contact</a> 
                    <ul>
-                        <li><a href="#home">ThirdHome</a></li>
-                        <li><a href="#news">ThirdNews</a></li>
-                        <li><a href="#contact">ThirdContact</a></li>
-                        <li><a href="#about">ThirdAbout</a></li>
+                        <li><a href="#home">ThirdSubHome</a></li>
+                        <li><a href="#news">ThirdSubNews</a></li>
+                        <li><a href="#contact">ThirdSubContact</a></li>
+                        <li><a href="#about">ThirdSubAbout</a></li>
                   </ul>
                 </li>
                 <li>
                   <a href="#about">About</a> 
                   <ul>
-                        <li><a href="#home">ForthHome</a></li>
-                        <li><a href="#news">ForthNews</a></li>
-                        <li><a href="#contact">ForthContact</a></li>
-                        <li><a href="#about">ForthAbout</a></li>
+                        <li><a href="#home">ForthSubHome</a></li>
+                        <li><a href="#news">ForthSubNews</a></li>
+                        <li><a href="#contact">ForthSubContact</a></li>
+                        <li><a href="#about">ForthSubAbout</a></li>
                   </ul>
                 </li>
               </ul>
@@ -72,70 +87,131 @@
           </div>  
       </div> 
 
-          <div class="secondcontentbox">
-        <div class="container">
-          <h2 style="color: aliceblue; text-align: center; text-decoration: underline;">Training Programme</h2> 
+    <div class="secondcontentbox">
+        <div class="container"> 
+          <div>
+            <h2 style="text-align: center; padding-top: 50px;">Training Programme</h2> 
+          <div class="lineview"></div>
+          </div>
               <div class="row">
                 <div class="description col-lg-3 col-md-6 col-sm-12"> 
+                    <div class="cardview">  
+                        <i class="fa fa-address-card" aria-hidden="true"></i>
+                            <p class="cardtext">1:1 Training </br> </br>
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings.
+                            </p> 
+                                <p class="hovertext">1:1 Training </br> </br>
+                                  Techvanto Community is a group of students who are trained by our experts 
+                                  and now associated with us for their learnings. 
+                                  Techvanto Community is a group of students who are trained by our experts 
+                                  and now associated with us for their learnings.
+                                  Techvanto Community is a group of students who are trained by our experts 
+                                  and now associated with us for their learnings. 
+                                </p> 
+                        <i class="fa fa-angle-down" aria-hidden="true"></i>
+                      </div>  
+                            <div class="knowmorediv">
+                              <p style="float: left; padding-left: 10px;">Know more</p>
+                              <i class="fa fa-angle-right" aria-hidden="true">
+                              </i> 
+                            </div>
+                    </div>
+                <div class="description col-lg-3 col-md-6 col-sm-12">
                   <div class="cardview">
-                    
-                      <i class="fa fa-address-card" aria-hidden="true"></i>
-      
-                          <p>1:1 Training </br> </br>
-                            Techvanto Community is a group of students who are trained by our experts 
-                            and now associated with us for their learnings.
-                          </p>
-                    
-                      <i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </div>
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <p class="cardtext">1:1 Training </br> </br>
+                          Techvanto Community is a group of students who are trained by our experts 
+                          and now associated with us for their learnings.
+                        </p>  
+                            <p class="hovertext">1:1 Training </br> </br>
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings. 
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings.
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings. 
+                            </p> 
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div> 
+                      <div class="knowmorediv">
+                        <p style="float: left; padding-left: 10px;">Know more</p>
+                        <i class="fa fa-angle-right" aria-hidden="true">
+                        </i> 
+                      </div>
                 </div> 
                 <div class="description col-lg-3 col-md-6 col-sm-12">
                   <div class="cardview">
-                    <div class="summary">
-                      <i class="fa fa-address-card" aria-hidden="true"></i>
-                    </div> 
-                    <div class="summary">2</div> 
-                    <div class="summary">3</div> 
-                  </div>
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <p class="cardtext">1:1 Training </br> </br>
+                          Techvanto Community is a group of students who are trained by our experts 
+                          and now associated with us for their learnings.
+                        </p> 
+                            <p class="hovertext">1:1 Training </br> </br>
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings. 
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings.
+                              Techvanto Community is a group of students who are trained by our experts 
+                              and now associated with us for their learnings. 
+                            </p> 
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                </div> 
+                      <div class="knowmorediv">
+                        <p style="float: left; padding-left: 10px;">Know more</p>
+                        <i class="fa fa-angle-right" aria-hidden="true">
+                        </i> 
+                      </div>
                 </div> 
                 <div class="description col-lg-3 col-md-6 col-sm-12">
-                  <div class="cardview">
-                    <div class="summary">1</div> 
-                    <div class="summary">2</div> 
-                    <div class="summary">3</div> 
-                  </div>
+                  <div class="cardview"> 
+                    <i class="fa fa-address-card" aria-hidden="true"></i>
+                        <p class="cardtext">1:1 Training </br> </br>
+                          Techvanto Community is a group of students who are trained by our experts 
+                          and now associated with us for their learnings.
+                        </p>  
+                              <p class="hovertext">1:1 Training </br> </br>
+                                Techvanto Community is a group of students who are trained by our experts 
+                                and now associated with us for their learnings. 
+                                Techvanto Community is a group of students who are trained by our experts 
+                                and now associated with us for their learnings.
+                                Techvanto Community is a group of students who are trained by our experts 
+                                and now associated with us for their learnings. 
+                              </p> 
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                 </div> 
-                <div class="description col-lg-3 col-md-6 col-sm-12">
-                  <div class="cardview">
-                    <div class="summary">1</div> 
-                    <div class="summary">2</div> 
-                    <div class="summary">3</div> 
-                  </div>
+                      <div class="knowmorediv">
+                        <p style="float: left; padding-left: 10px;">Know more</p>
+                        <i class="fa fa-angle-right" aria-hidden="true">
+                        </i> 
+                      </div>
                 </div>
               </div> 
             </div> 
         </div> 
-        <!--
+
         <div class="lastcontent"> 
-          <div style=" background-color: black; width:250px; border: 2px solid blue; box-shadow: 7px 5px 7px red;">
+          <div class="icontext">
             <p style="float: left;">Contact US:</p> 
-            <i class="fa fa-facebook iconview" aria-hidden="true"></i>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
             <i class="fa fa-instagram" aria-hidden="true"></i>
             <i class="fa fa-youtube-play" aria-hidden="true"></i>
             <i class="fa fa-linkedin" aria-hidden="true"></i>
           </div> 
 
           <div class="iconshow"> 
-            <div>
-              <i class="fa fa-phone-square" aria-hidden="true"></i>
-            </div>
+              <div class="contactbutton">
+                <a href="tel:5551234567"><i class="fa fa-phone iconview" aria-hidden="true"></i></a>
+              </div>
             
-            <div>
-              <i class="fa fa-commenting" aria-hidden="true"></i>
+            <div class="contactbutton"> 
+                <a href=
+                "mailto:someone@yoursite.com?cc=someoneelse@theirsite.com,another@thatsite.com,me@mysite.com&bcc=lastperson@theirsite.com">
+                <i class="fa fa-envelope-o iconview" aria-hidden="true"></i></a>  
             </div>
            
           </div>
-      </div> -->
+      </div> 
     
  </div>  
 </body>

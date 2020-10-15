@@ -8,20 +8,25 @@ body,html {
     display: flex;
     flex-flow: column;
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 0px; 
+    background-image: url('../Images/Vector16.png'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: cover;
+} 
+
+.lineview {
+  height: 2px; 
+  width: 330px; 
+  background-color: #ff0066; 
+  margin: 0 auto; 
+  margin-bottom: 60px;
 } 
 
 .secondcontentbox {
     flex: 1 0 auto;
     width: 100%;    
 }  
-
-.lastcontent {
-    flex: 0 0 auto;
-    color: #f1f1f1;
-    width: 100%;
-} 
-
 
 .mainheader { 
     display: flex;
@@ -31,16 +36,23 @@ body,html {
 } 
 
 .imgview { 
-    flex: 0 0 100px;
-    
+    flex: 0 0 100px;  
   } 
-
-
+  
 img {
     height: 52px;
     width: 250px;
 } 
 
+.triangle-down {
+    border-left: 15px solid transparent;
+    border-bottom: 50px solid black;
+}  
+/*
+.triangle-down:hover { 
+  background-color: #27ae60; 
+ }
+*/
 .naview { 
     display: flex;
     flex-flow: row;
@@ -54,7 +66,7 @@ img {
 } 
 
 .dropdownlink > ul{
-    background: black;
+    background: black; 
   } 
 
 .dropdownlink ul
@@ -125,6 +137,12 @@ img {
   {
     line-height:120%;
     padding:10px 15px
+  } 
+
+.dropdownlink ul ul ul
+  {
+    top:-4px;
+    left:100%
   }
 
 .dropdownlink ul li:hover > ul
@@ -146,7 +164,8 @@ img {
     z-index: 10; 
     position: absolute;
     margin-left: 40px;
-    margin-top: 10px;
+    margin-top: 10px; 
+    border: 2px solid #ff0066;
     border-radius: 50%;
   } 
 
@@ -159,8 +178,6 @@ img {
 }
 
 .togglebutton { 
-    
-    
     display: none; 
     flex: 1 0 auto; 
     background-color:  orange;
@@ -173,12 +190,13 @@ img {
     background-color: black;
 }
 
-.description { 
+.description {  
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 0px;
     padding-bottom: 0px;
-   
+    position: relative;
+    justify-content: center;  
 } 
 
 .cardview { 
@@ -192,17 +210,45 @@ img {
     background-repeat: no-repeat;
     background-size: cover;
     border: 0px solid black;
-    border-radius: 10px;
+    border-radius: 10px;  
+    position: absolute; 
     
+} 
+
+.cardview:hover {  
+  background: transparent;
+  background-color: #ff0066; 
+  -webkit-transition: background-color linear0.2s;
+  -moz-transition: background-color linear 0.2s;
+  -o-transition: background-color linear 0.2s;
+  transition: background-color linear 0.2s;
+}  
+
+.cardtext {
+  display: block;
 }
+
+.hovertext {
+  display: none;
+} 
+
+.cardview:hover > .cardtext {
+  display: none;
+}  
+
+.cardview:hover > i {
+  display: none;
+}
+
+.cardview:hover > .hovertext {
+  display: block;
+} 
 
 .cardview p { 
   margin: 10px;
   color: white;
   line-height: 20px; 
   flex: 1 1 auto;
- 
-
 } 
 
 .cardview i { 
@@ -212,38 +258,77 @@ img {
     flex: 0 0 auto; 
     font-size: 20px;
     text-align:center; 
-
-}
-
-.iconshow {
-    float: right;
-    color: #f1f1f1;
-    background-color: #ff0066;
-} 
-
-
-
-@media only screen and (max-width: 768px) { 
-    /* For TabletView */ 
-    .description { 
-        padding: 10px;
-        background-color: green;
-    }
-
 }  
 
-@media only screen and (max-width: 576px) {
-        /* For MobileView */ 
-        .description { 
-            padding-left: 0px;
-            padding-right: 0px; 
-            padding-top: 10px;
-            padding-bottom: 10px;
-            background-color: skyblue;
-        } 
+.knowmorediv {
+  border-radius: 35px;
+  background: black;
+  width: 110px; 
+  text-align:center;  
+  display: none; 
+  color: #f1f1f1;
+  margin-top: 260px;
+  margin-left: 80px;
+  position: absolute; 
+} 
 
-    .cardview {
-        flex-flow: row;
+.cardview:hover + .knowmorediv { 
+  display: block; 
+  top: 10px; 
+}
+
+.lastcontent {
+    flex: 0 0 auto;
+    display: flex;
+    flex-flow: row;
+    color: #f1f1f1; 
+    justify-content: space-between;
+    width: 100%;
+}  
+
+.icontext {
+  background-color: black;
+  height: 30px; 
+  margin-bottom: 0px; 
+  padding-right: 8px; 
+  align-self: flex-end;
+}
+
+.iconshow { 
+    padding-right: 40px;
+    
+} 
+
+.contactbutton {  
+    background-color: #ff0066;
+    height: 40px;
+    width: 40px; 
+    justify-content: center;
+    border-radius: 50%; 
+    margin-top: 10px; 
+    margin-bottom: 10px;
+}  
+
+.iconview { 
+  color: #f1f1f1;
+    font-size: 20px;
+    padding-top: 10px; 
+    padding-left: 11px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+        /* For MobileView */ 
+ .description {  
+          padding-left: 0px;
+          padding-right: 0px; 
+          padding-top: 10px;
+          padding-bottom: 10px;  
+      }  
+
+    .cardview { 
+      flex-flow: row;
     } 
     .dropdownlink {
             display: none;
