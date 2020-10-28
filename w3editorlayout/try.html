@@ -3,216 +3,390 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NewTechvantoWebsite</title> 
+    <title>industrial-training-services</title> 
+    <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="./homelayout.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+   <link rel="stylesheet" type="text/css" href="./test.css"> 
+   <script type="text/javascript">
+     
+        const items = document.querySelectorAll(".accordion a");
+
+        function toggleAccordion(){
+          this.classList.toggle('active');
+          this.nextElementSibling.classList.toggle('active');
+        }
+
+        items.forEach(item => item.addEventListener('click', toggleAccordion));
+   </script>
+  
 </head>
 <body>
-  <div class="contentbox">
-      <div class="mainheader">
-          <div class="imgview">
-            <img src="../Images/relogo.png">
-          </div>  
-          <div class="triangle-down"></div>
-          <div class="naview"> 
-            <div class="togglebutton"> 
-                <p style = "margin: 10px;">UPCOMING EVENT</p>
-                <i class="fa fa-bars" style = "margin: 10px;" aria-hidden="true"></i> 
-                <i class="fa fa-bars" style = "margin: 10px;" aria-hidden="true"></i>
-            </div> 
-          
-            <div class="dropdownlink"> 
-              <ul>
-                <li>
-                  <a class="active" href="#home">Home</a> 
-                  <ul>
-                        <li><a href="#home">firstsubHome</a></li>
-                        <li><a href="#news">firstSubNews</a> 
-                                  <ul>
-                                    <li><a href="#home">firstdeepHome</a></li>
-                                    <li><a href="#news">firstdeepNews</a> 
-                                              <ul>
-                                                <li><a href="#home">firstSubDeepHome</a></li>
-                                                <li><a href="#news">firstSubDeepNews</a></li>
-                                                <li><a href="#contact">firstSubDeepContact</a></li>
-                                                <li><a href="#about">firstSubDeepAbout</a></li>
-                                          </ul>
-                                    </li>
-                                    <li><a href="#contact">firstdeepContact</a></li>
-                                    <li><a href="#about">firstdeepAbout</a></li>
-                              </ul>
-                        </li>
-                        <li><a href="#contact">firstSubContact</a></li>
-                        <li><a href="#about">firstSubAbout</a></li>
-                  </ul>
-                </li>
-              <li>
-                  <a href="#news">News</a> 
-                  <ul>
-                        <li><a href="#home">SecondSubHome</a></li>
-                        <li><a href="#news">SecondSubNews</a></li>
-                        <li><a href="#contact">SecondSubContact</a></li>
-                        <li><a href="#about">SecondSubAbout</a></li>
-                  </ul>
-                </li> 
-              <li>
-                  <a href="#contact">Contact</a> 
-                   <ul>
-                        <li><a href="#home">ThirdSubHome</a></li>
-                        <li><a href="#news">ThirdSubNews</a></li>
-                        <li><a href="#contact">ThirdSubContact</a></li>
-                        <li><a href="#about">ThirdSubAbout</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#about">About</a> 
-                  <ul>
-                        <li><a href="#home">ForthSubHome</a></li>
-                        <li><a href="#news">ForthSubNews</a></li>
-                        <li><a href="#contact">ForthSubContact</a></li>
-                        <li><a href="#about">ForthSubAbout</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </div> 
-            <div class="spaceview"></div>
-            <div class="profileview"> 
-              <img src="D:\pritam\Pictures\Theatre brp\pics\2\100CANON\IMG_0098.jpg" alt="Avatar"> 
-              <div class="profilebackground"></div>
+  <header>  
+    <div class="primaryheader"> 
+      <img src="../Images/relogo.png"> 
+      <div class="spaceView"></div>
+      <button class="registerbtn">Register Now for Training</button>   
+        <div class="contactdetails"> 
+          <div class="contactview">
+                <i class="fa fa-linkedin-square fa-2x icons" aria-hidden="true"></i> 
+                <i class="fa fa-instagram fa-2x icons" aria-hidden="true"></i> 
+                <i class="fa fa-facebook-square fa-2x icons" aria-hidden="true"></i> 
+                <i class="fa fa-twitter-square fa-2x icons" aria-hidden="true"></i> 
+             </div>
+            <div class="callaction">
+            <p>
+                <i class="fa fa-phone fa-lg" aria-hidden="true"></i>Call us At: +91-8953519158</p></div>
+    </div> 
+  </div> 
+    <nav class="secondaryheader">      
+            <div class="topnav-right">
+              <a href="https://www.w3schools.com/css/default.asp" target="_blank">Home</a>
+              <a href="https://www.w3schools.com/css/default.asp" target="_blank">Services</a> 
+              <a href="https://www.w3schools.com/css/default.asp" target="_blank">Courses</a> 
+              <a href="https://www.w3schools.com/css/default.asp" target="_blank">Events</a> 
+              <a href="https://www.w3schools.com/css/default.asp" target="_blank">About Us</a> 
+              <a href="https://www.w3schools.com/css/default.asp" target="_blank">Contact us</a>
             </div>
-          </div>  
+    </nav>
+  </header> 
+  <section class="formtextsec">
+    <div class="textview">
+      <div class="imageview">
+          <img src="../Images/computer.jpg">
+          <img src="../Images/download.png">
       </div> 
+      <p style="font-size: 20px; color: black;">
+        Techvanto Internship Programme'20</br>
+          in association with</br>
+          IIT Bhubaneswar</p>
+         <p style="margin-top: 5px;">Learn trending technology in this summer and win cash rewards.
+      </p> 
+      <div class="lineview"></div> 
+     <div class="paratext">
+       <p style="font-size: 20px; color: black; margin-right: 200px; margin-left: 30px;">Win Prizes</p> 
+       <p style="font-size: 20px; color: black; margin-right: 200px;">Get Certified</p> 
+       <p style="font-size: 20px; color: black;">Learn</p>
+     </div>
+    </div> 
+    <div class="formview">
 
-    <div class="secondcontentbox">
-        <div class="container"> 
-          <div>
-            <h2 style="text-align: center; padding-top: 50px;">Training Programme</h2> 
-          <div class="lineview"></div>
-          </div>
-              <div class="row">
-                <div class="description col-lg-3 col-md-6 col-sm-12"> 
-                    <div class="cardview">  
-                        <i class="fa fa-address-card" aria-hidden="true"></i>
-                            <p class="cardtext">1:1 Training </br> </br>
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings.
-                            </p> 
-                                <p class="hovertext">1:1 Training </br> </br>
-                                  Techvanto Community is a group of students who are trained by our experts 
-                                  and now associated with us for their learnings. 
-                                  Techvanto Community is a group of students who are trained by our experts 
-                                  and now associated with us for their learnings.
-                                  Techvanto Community is a group of students who are trained by our experts 
-                                  and now associated with us for their learnings. 
-                                </p> 
-                        <i class="fa fa-angle-down" aria-hidden="true"></i>
-                      </div>  
-                            <div class="knowmorediv">
-                              <p style="float: left; padding-left: 10px;">Know more</p>
-                              <i class="fa fa-angle-right" aria-hidden="true">
-                              </i> 
-                            </div>
-                    </div>
-                <div class="description col-lg-3 col-md-6 col-sm-12">
-                  <div class="cardview">
-                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                        <p class="cardtext">1:1 Training </br> </br>
-                          Techvanto Community is a group of students who are trained by our experts 
-                          and now associated with us for their learnings.
-                        </p>  
-                            <p class="hovertext">1:1 Training </br> </br>
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings. 
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings.
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings. 
-                            </p> 
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div> 
-                      <div class="knowmorediv">
-                        <p style="float: left; padding-left: 10px;">Know more</p>
-                        <i class="fa fa-angle-right" aria-hidden="true">
-                        </i> 
-                      </div>
-                </div> 
-                <div class="description col-lg-3 col-md-6 col-sm-12">
-                  <div class="cardview">
-                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                        <p class="cardtext">1:1 Training </br> </br>
-                          Techvanto Community is a group of students who are trained by our experts 
-                          and now associated with us for their learnings.
-                        </p> 
-                            <p class="hovertext">1:1 Training </br> </br>
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings. 
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings.
-                              Techvanto Community is a group of students who are trained by our experts 
-                              and now associated with us for their learnings. 
-                            </p> 
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div> 
-                      <div class="knowmorediv">
-                        <p style="float: left; padding-left: 10px;">Know more</p>
-                        <i class="fa fa-angle-right" aria-hidden="true">
-                        </i> 
-                      </div>
-                </div> 
-                <div class="description col-lg-3 col-md-6 col-sm-12">
-                  <div class="cardview"> 
-                    <i class="fa fa-address-card" aria-hidden="true"></i>
-                        <p class="cardtext">1:1 Training </br> </br>
-                          Techvanto Community is a group of students who are trained by our experts 
-                          and now associated with us for their learnings.
-                        </p>  
-                              <p class="hovertext">1:1 Training </br> </br>
-                                Techvanto Community is a group of students who are trained by our experts 
-                                and now associated with us for their learnings. 
-                                Techvanto Community is a group of students who are trained by our experts 
-                                and now associated with us for their learnings.
-                                Techvanto Community is a group of students who are trained by our experts 
-                                and now associated with us for their learnings. 
-                              </p> 
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </div> 
-                      <div class="knowmorediv">
-                        <p style="float: left; padding-left: 10px;">Know more</p>
-                        <i class="fa fa-angle-right" aria-hidden="true">
-                        </i> 
-                      </div>
-                </div>
-              </div> 
-            </div> 
-        </div> 
-
-        <div class="lastcontent"> 
-          <div class="icontext">
-            <p style="float: left;">Contact US:</p> 
-            <i class="fa fa-facebook" aria-hidden="true"></i>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
-            <i class="fa fa-youtube-play" aria-hidden="true"></i>
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
+    </div>
+  </section> 
+  <section class="textsection">
+    <h1 style="text-align: center;">About Techvanto Internship Contest</h1> 
+    <p style="text-align: center;">The Summer Training Challenge is your chance to learn the most trending technology from scratch to
+       the advanced level and help you boost your career </br>goals. .</p> 
+       <p style="text-align: center; color: blue; font-size: large;">Read More<i class="fa fa-angle-double-right" aria-hidden="true"></i></p>
+  </section> 
+  <section class="paricipateview">
+    <div class="container">
+      <h1 style="text-align: center;">Why Should You Paricipate ?</h1> 
+      <p style="text-align: center; font-size: 22px;">Win Cash Rewards</p> 
+      <div class="row"> 
+        <div class="col-lg-4 paricipatetextview">
+          <div class="cardview"> 
+            <div class="batchesview">
+            <img src="../Images/illustration.webp"> 
+            <p style="color: black; margin-top: 20px;">First Prize Rs 35,000 /-</p> 
           </div> 
-
-          <div class="iconshow"> 
-              <div class="contactbutton">
-                <a href="tel:5551234567"><i class="fa fa-phone iconview" aria-hidden="true"></i></a>
-              </div>
-            
-            <div class="contactbutton"> 
-                <a href=
-                "mailto:someone@yoursite.com?cc=someoneelse@theirsite.com,another@thatsite.com,me@mysite.com&bcc=lastperson@theirsite.com">
-                <i class="fa fa-envelope-o iconview" aria-hidden="true"></i></a>  
-            </div>
-           
           </div>
+        </div>
+        <div class="col-lg-4 paricipatetextview">
+          <div class="cardview"> 
+            <div class="batchesview">
+            <img src="../Images/illustration.webp"> 
+            <p style="color: black; margin-top: 20px;">First Prize Rs 35,000 /-</p> 
+          </div> 
+          </div>
+        </div> 
+        <div class="col-lg-4 paricipatetextview"> 
+          <div class="cardview"> 
+            <div class="batchesview">
+            <img src="../Images/illustration.webp"> 
+            <p style="color: black; margin-top: 20px;">First Prize Rs 35,000 /-</p> 
+          </div> 
+          </div>
+        </div> 
+        <div class="col-lg-4 paricipatetextview"> 
+          <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Learning opportunity</p>
+          <div class="cardview"> 
+            <div class="batchesview">
+            <img src="../Images/illustration.webp"> 
+            <p style="color: black; margin-top: 20px;">First Prize Rs 35,000 /-</p> 
+          </div> 
+          </div>
+        </div>
+        <div class="col-lg-4 paricipatetextview"> 
+          <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Certification</p>
+          <div class="cardview"> 
+            <div class="batchesview">
+            <img src="../Images/illustration.webp"> 
+            <p style="color: black; margin-top: 20px;">First Prize Rs 35,000 /-</p> 
+          </div> 
+          </div>
+        </div> 
+        <div class="col-lg-4 paricipatetextview"> 
+          <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+          <div class="cardview"> 
+            <div class="batchesview">
+            <img src="../Images/illustration.webp"> 
+            <p style="color: black; margin-top: 20px;">First Prize Rs 35,000 /-</p> 
+          </div> 
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> 
+  <section class="detailsview">
+    <div class="container">
+      <h1 style="text-align: center;">Why Training From Techvanto ?</h1>  
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="../Images/computer.jpg" alt="Avatar" style="width:350px;height:150px;"> 
+                <p>Ease</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="../Images/computer.jpg" alt="Avatar" style="width:350px;height:150px;"> 
+                <p>Flexible</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="../Images/computer.jpg" alt="Avatar" style="width:350px;height:150px;"> 
+                <p>Versatile</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-2"></div> 
+        <div class="col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="../Images/computer.jpg" alt="Avatar" style="width:350px;height:150px;"> 
+                <p>Opportunity</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-4">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="../Images/computer.jpg" alt="Avatar" style="width:350px;height:150px;"> 
+                <p>Live Projects</p>
+              </div>
+              <div class="flip-card-back">
+                <h1>John Doe</h1> 
+                <p>Architect & Engineer</p> 
+                <p>We love that guy</p>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="col-lg-2"></div>
+      </div>
+    </div>
+  </section> 
+  <section class="benifitsview">
+    <div class="container">
+      <h1 style="text-align: center;">Benifits</h1> 
+        <div class="row"> 
+          <div class="col-lg-4 paricipatetextview"> 
+            <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+            <div class="cardview"> 
+              <div class="batchesview">
+              <img src="../Images/illustration.webp"> 
+              <p style="color: black;">Your participation and talent could
+                 grab you Internship offer from us.</p> 
+            </div> 
+            </div>
+          </div> 
+          <div class="col-lg-4 paricipatetextview"> 
+            <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+            <div class="cardview"> 
+              <div class="batchesview">
+              <img src="../Images/illustration.webp"> 
+              <p style="color: black;">On basis of performance you coluld be awarded with Merit Certificate.</p> 
+            </div> 
+            </div>
+          </div> 
+          <div class="col-lg-4 paricipatetextview"> 
+            <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+            <div class="cardview"> 
+              <div class="batchesview">
+              <img src="../Images/illustration.webp"> 
+              <p style="color: black;">On basis of performance you coluld be awarded with Merit Certificate.</p> 
+            </div> 
+            </div>
+          </div>
+          <div class="col-lg-4 paricipatetextview"> 
+            <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+            <div class="cardview"> 
+              <div class="batchesview">
+              <img src="../Images/illustration.webp"> 
+              <p style="color: black;">On basis of performance you coluld be awarded with Merit Certificate.</p> 
+            </div> 
+            </div>
+          </div> 
+          <div class="col-lg-4 paricipatetextview"> 
+            <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+            <div class="cardview"> 
+              <div class="batchesview">
+              <img src="../Images/illustration.webp"> 
+              <p style="color: black;">On basis of performance you coluld be awarded with Merit Certificate.</p> 
+            </div> 
+            </div>
+          </div> 
+          <div class="col-lg-4 paricipatetextview"> 
+            <p style="text-align: center; padding-top: 20px; font-size: 20px; height: 40px;">Contest For All Courses</p> 
+            <div class="cardview"> 
+              <div class="batchesview">
+              <img src="../Images/illustration.webp"> 
+              <p style="color: black;">On basis of performance you coluld be awarded with Merit Certificate.</p> 
+            </div> 
+            </div>
+          </div>
+
+        </div>
+    </div>
+  </section> 
+  <section class="faqview">
+    <div class="container">
+      <h2 style="text-align: center;">FAQ</h2>
+      <div class="accordion">
+        <div class="accordion-item">
+          <a>What can JavaScript Do?</a>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>How JavaScript Can Modify HTML and CSS Values?</a>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>What Is SVG?</a>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>Is FAQ Section Matters In Website?</a>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <a>How To Create a Light FAQ Element?</a>
+          <div class="content">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Elementum sagittis vitae et leo duis ut. Ut tortor pretium viverra suspendisse potenti.</p>
+          </div>
+        </div>
+      </div>     
+    </div> 
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script  src="formlayout.js"></script>
+  </section> 
+  <footer class="footerview">  
+    <div class="summaryview">
+      <div style="margin-left: 200px; font-size: 18px; color: white;">
+        <img src="../Images/relogo.png" style="margin-top: 20px;">
+        <p style="margin-top: 30px;">Techvanto is a renowned </br> solution 
+          provider of all </br> technological requirements.</p>  
+          <p>Follow Us on:-</p> 
+          <div class="footercontact">
+          <i class="fa fa-linkedin-square fa-2x icons" aria-hidden="true"></i> 
+                <i class="fa fa-instagram fa-2x icons" aria-hidden="true"></i> 
+                <i class="fa fa-facebook-square fa-2x icons" aria-hidden="true"></i> 
+                <i class="fa fa-twitter-square fa-2x icons" aria-hidden="true"></i> 
+            </div>
+      </div>
+      <div style="margin-left: 50px; font-size: 18px; color: white; padding-top: 20px;">
+        <h4>Menu</h4> 
+        <div class="contactlist">
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-home icon" aria-hidden="true"></i>Home</a> </br> </br>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-book icon" aria-hidden="true"></i>Course</a> </br> </br>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-commenting-o icon" aria-hidden="true"></i>Feedback</a> </br> </br> 
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-info icon" aria-hidden="true"></i>About Us</a> </br> </br>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-rss icon" aria-hidden="true"></i>Blog</a> </br> </br>
+        <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-user-plus icon" aria-hidden="true"></i>Register</a>
+      </div>
       </div> 
-    
- </div>  
+      <div style="margin-left: 50px; font-size: 18px; color: white; padding-top: 20px;">
+        <h4>Services</h4> 
+        <div class="contactlist">
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-home icon" aria-hidden="true"></i>Workshop</a> </br> </br>
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-book icon" aria-hidden="true"></i>A separate pep class </br>
+            would be taken for your</br> upcomming Placement.</a> </br> </br>
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-commenting-o icon" aria-hidden="true"></i>A separate pep class </br>
+            would be taken for your</br> upcomming Placement.</a> </br> </br> 
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-info icon" aria-hidden="true"></i>About Us</a> </br> </br>
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-rss icon" aria-hidden="true"></i>Blog</a> </br> </br>
+          <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-user-plus icon" aria-hidden="true"></i>Register</a>
+        </div>
+      </div> 
+      <div style="margin-left: 150px; font-size: 18px; color: white; padding-top: 20px;"> 
+        <div class="enqform"></div>  
+          <div style="height: 300px;"></div>
+        <div>
+          <div class="contactlist">
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank"> <i class="fa fa-map-marker" aria-hidden="true"></i>M.G. Road Ghitorti, New Delhi</a> </br> </br>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-phone" aria-hidden="true"></i>+91-8953519158</a> </br> </br>
+            <a href="https://www.w3schools.com/css/default.asp" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i>abc@gmail.com</a>
+          </div>
+        </div>
+      </div> 
+    </div> 
+    <div style="background-color: #1f004d; padding-bottom: 10px; color: white;">
+      <h6 style="text-align: center;">
+      Need help or have any question, call us at +91-(895) 351-9158</h6></div>   
+    <div class="footertext">
+      <div style="margin-left: 400px; color: blue; font-size: 14px;">Privacy Policy |</div> 
+      <div style="margin-left: 20px; color: blue; font-size: 14px;">© Techvanto Private Limited 2020</div>
+      <div style="margin-left: 20px; color: blue; font-size: 14px;">|Terms & conditions</div>
+    </div> 
+  </footer> 
 </body>
-</html>
+</html> 
+
+
